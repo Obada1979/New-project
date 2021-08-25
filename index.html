@@ -20,7 +20,32 @@
             color: white;
 
         }
+
+        .landing {
+            background-color: #6D8891;
+        }
+
+        .titleit {
+            color: white;
+
+        }
+
+        /*.landingse{*/
+        /*    background-color: #5C97BF;*/
+        /*}*/
+
+        #demo {
+            -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 50px 28px rgba(0, 0, 0, 0.24);
+            box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 50px 28px rgba(0, 0, 0, 0.24);
+        }
+
+        .demo1 {
+            -webkit-box-shadow: 0px 0px 23px 5px rgba(0, 0, 0, 0.49);
+            box-shadow: 0px 0px 23px 5px rgba(0, 0, 0, 0.49);
+        }
+
     </style>
+
 
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
@@ -67,7 +92,7 @@
                     </li>
                 </ul>
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control me-2" type="search" placeholder="Search something" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit"
                             onclick="window.open('http://www.google.com', '_blank')" ;>Search
                     </button>
@@ -76,36 +101,83 @@
         </div>
     </nav>
 </section>
-
-<h3>
-    <small class="text-muted">IT courses</small>
-</h3>
-<p class="lead px-3">
-    Information Technology courses are an excellent choice to help advance your career. Whether you are seeking
-    professional development, new skills, or a new career, information technology courses can help you become a more
-    competitive and valuable employee with important skills. There are academic institutions located around the
-    world offering information technology courses through programs that include online and classroom education.
-    Information technology courses cover a wide range of topics but some themes include software applications,
-    hardware, programming, security, business applications, design, artificial intelligence, databases, medical
-    records, and others. Programs range from a week to a year and can offer certification or diplomas.
-</p>
-
+<section class="landingse">
+    <div class="container m-auto mt-4 mb-4 landing" id="demo">
+        <div class="d-flex flex-row">
+            <div class="col-6">
+                <h3>
+                    <small class="titleit p-1">IT courses</small>
+                </h3>
+                <p class="lead p-2">
+                    Information Technology courses are an excellent choice to help advance your career. Whether you are
+                    seeking
+                    professional development, new skills, or a new career, information technology courses can help you
+                    become a more
+                    competitive and valuable employee with important skills. There are academic institutions located
+                    around
+                    the
+                    world offering information technology courses through programs that include online and classroom
+                    education.
+                    Information technology courses cover a wide range of topics but some themes include software
+                    applications,
+                    hardware, programming, security, business applications, design, artificial intelligence, databases,
+                    medical
+                    records, and others.
+                </p>
+            </div>
+            <div class="col-6 p-5">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="IT-Courses_2.jpg" width="320px" height="320px" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="IT-corsus_3.jpg" width="320px" height="320px" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="IT-Courses_1.png" width="320px" height="320px" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <hr>
 
 <div class="container">
     <div class="card-group row justify-content-between">
-        <div class="card col-12 col-sm-4 m-2">
+        <div class="card col-12 col-sm-4 m-2 demo1">
             <img src="fullstackIcon.jpg" class="card-img-top p-2" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Web Full Stack</h5>
                 <p class="card-text">A full stack web developer is a person who can develop both client and
                     server software. In addition to mastering HTML and CSS, he/she also knows how to: - Program a
-                    browser (like using JavaScript, jQuery, Angular, or Vue) - Program a server (like using PHP, ASP, Python, or
+                    browser (like using JavaScript, jQuery, Angular, or Vue) - Program a server (like using PHP, ASP,
+                    Python, or
                     Node) - Program a database (like using SQL, SQLite, or MongoDB)</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
         </div>
-        <div class="card col-12 col-sm-4 m-2">
+        <div class="card col-12 col-sm-4 m-2 demo1">
             <img src="networkingIcon.jpg" class="card-img-top p-2" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Networking</h5>
@@ -118,7 +190,7 @@
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
         </div>
-        <div class="card col-12 col-sm-4 m-2">
+        <div class="card col-12 col-sm-4 m-2 demo1">
             <img src="cyberSecurity.jpeg" class="card-img-top p-2" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Cyber security</h5>
@@ -166,7 +238,6 @@
         </svg>
     </a>
 </footer>
-
 
 <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
